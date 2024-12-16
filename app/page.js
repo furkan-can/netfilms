@@ -1,8 +1,8 @@
+import HomeContainer from "@/containers/home"
+
 function HomePage() {
   return (
-    <div>
-      Home
-    </div>
+    <HomeContainer />
   )
 }
 
