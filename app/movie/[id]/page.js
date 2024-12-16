@@ -4,7 +4,6 @@ import Movies from "@/mocks/movies.json"
 import { notFound } from 'next/navigation';
 
 async function MoviePage({ params }) {
-
   const movieId = (await params).id;
 
   const movieDetail = Movies.results.find(movie => movie.id.toString() === movieId);

@@ -1,6 +1,5 @@
 import React from "react";
 import Link from "next/link";
-
 import styles from "./styles.module.css";
 
 function Categories({ categories }) {
@@ -10,7 +9,7 @@ function Categories({ categories }) {
         <Link
           key={category.id}
           className={styles.category}
-          href={`/${category.id}`}
+          href={`/category/${category.id}`}
         >
           <div className={styles.name}>{category.name}</div>
         </Link>
@@ -19,5 +18,4 @@ function Categories({ categories }) {
   );
 }
 
-// export { CategoriesLoading } from "./loading";
 export { Categories };
